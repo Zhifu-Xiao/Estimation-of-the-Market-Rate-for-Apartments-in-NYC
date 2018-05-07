@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+install:
+  - pip install -U pip
+  - pip install fancyimpute
+  - pip install -r requirements.txt
+script: 
+  -  travis_wait py.test test_rent.py
